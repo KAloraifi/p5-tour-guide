@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Riyadh Tour</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="working_hours">Working Hours: %s</string>
+    <string name="category_museums">Museums</string>
+    <string name="category_mosques">Mosques</string>
+    <string name="category_malls">Malls</string>
+    <string name="category_parks">Parks</string>
+
+</resources>
