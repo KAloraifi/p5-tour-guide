@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -31,11 +30,11 @@ public class ParksFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("ALNakeel Park", "7516 Juwairiyah Bint Al Harith, An Nakhil, Riyadh 12381 4610", "Always Open"));
-        locations.add(new Location("WORLD SIGHTS PARK Riyadh", "4298 Nasir Ar Rajihi, Al Mughrizat, Riyadh 12482 7164", "3:30PM-11PM"));
-        locations.add(new Location("King Abdullah Walkways and Park", "Salah Ad Din, Unnamed Road، Riyadh 12435", "Always Open"));
-        locations.add(new Location("King Fahad Garden", "Al Olaya, Riyadh 12211", "8AM-7PM"));
-        locations.add(new Location("Prince Abdulaziz Bin Mohammed Bin Ayyaf Park", "Al Hamra, Riyadh 13216", "Always Open"));
+        locations.add(new Location(getString(R.string.park_name_1), getString(R.string.park_address_1), getString(R.string.park_working_hours_1)));
+        locations.add(new Location(getString(R.string.park_name_2), getString(R.string.park_address_2), getString(R.string.park_working_hours_2)));
+        locations.add(new Location(getString(R.string.park_name_3), getString(R.string.park_address_3), getString(R.string.park_working_hours_3)));
+        locations.add(new Location(getString(R.string.park_name_4), getString(R.string.park_address_4), getString(R.string.park_working_hours_4)));
+        locations.add(new Location(getString(R.string.park_name_5), getString(R.string.park_address_5), getString(R.string.park_working_hours_5)));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
@@ -47,7 +46,7 @@ public class ParksFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Location location = locations.get(position);
 
-                Uri mapUri = Uri.parse("geo:0,0?q=" + location.getAddress());
+                Uri mapUri = Uri.parse(getString(R.string.address_params) + location.getAddress());
                 Intent intent = new Intent(Intent.ACTION_VIEW, mapUri);
                 startActivity(intent);
 

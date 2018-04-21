@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -31,11 +30,11 @@ public class MosquesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("King Khalid Grand Mosque", "Umm Al Hamam St, Umm Al Hamam Al Gharbi، Umm Al Hamam Al Gharbi, Riyadh 12326", "Always Open"));
-        locations.add(new Location("Al Rajhi Mosque", "7084 Al Akheyar, Al Jazirah Riyadh 14251 2229", "Always Open"));
-        locations.add(new Location("Fahad Al Owaidah Grand Mosque", "King Abdullah Branch Rd, Al Wahah, Riyadh 12445", "Always Open"));
-        locations.add(new Location("Princess Latifa Bint Sultan Bin Abdulaziz Grand Mosque", "Takhassusi St, Ar Rahmaniyah, takhsussi 12343, Riyadh 12343", "Always Open"));
-        locations.add(new Location("Al Jowharah Grand Mosque", "7110 Uthman Ibn Affan Branch Rd, At Taawun, Riyadh 12476", "Always Open"));
+        locations.add(new Location(getString(R.string.mosque_name_1), getString(R.string.mosque_address_1), getString(R.string.mosque_working_hours_1)));
+        locations.add(new Location(getString(R.string.mosque_name_2), getString(R.string.mosque_address_2), getString(R.string.mosque_working_hours_2)));
+        locations.add(new Location(getString(R.string.mosque_name_3), getString(R.string.mosque_address_3), getString(R.string.mosque_working_hours_3)));
+        locations.add(new Location(getString(R.string.mosque_name_4), getString(R.string.mosque_address_4), getString(R.string.mosque_working_hours_4)));
+        locations.add(new Location(getString(R.string.mosque_name_5), getString(R.string.mosque_address_5), getString(R.string.mosque_working_hours_5)));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
@@ -47,7 +46,7 @@ public class MosquesFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Location location = locations.get(position);
 
-                Uri mapUri = Uri.parse("geo:0,0?q=" + location.getAddress());
+                Uri mapUri = Uri.parse(getString(R.string.address_params) + location.getAddress());
                 Intent intent = new Intent(Intent.ACTION_VIEW, mapUri);
                 startActivity(intent);
 

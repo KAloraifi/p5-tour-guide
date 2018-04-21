@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -31,11 +30,11 @@ public class MallsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Location> locations = new ArrayList<>();
-        locations.add(new Location("Al Nakheel Mall", "2976 Exit 9, Al Imam Saud Ibn Abdul Aziz Branch Road, Mugharazat District، Al Mughrizat, Riyadh 12483", "9:30AM-11PM", R.drawable.location_mall_1));
-        locations.add(new Location("Centria Mall", "Olaya St, Al Olaya, Riyadh 12241", "10AM-10:30PM", R.drawable.location_mall_2));
-        locations.add(new Location("Riyadh Gallery", "262 King Fahd Rd, King Fahd, Riyadh 12262", "8AM-12AM", R.drawable.location_mall_3));
-        locations.add(new Location("Hayat Mall", "King Abdul Aziz Rd, King Fahd, Riyadh 12272", "8AM-1AM", R.drawable.location_mall_4));
-        locations.add(new Location("Granada Center", "Eastern Ring Branch Rd, Exit 9, Ash Shuhada District، Ash Shuhada, Riyadh 13241", "9AM-11PM", R.drawable.location_mall_5));
+        locations.add(new Location(getString(R.string.mall_name_1), getString(R.string.mall_address_1), getString(R.string.mall_working_hours_1), R.drawable.location_mall_1));
+        locations.add(new Location(getString(R.string.mall_name_2), getString(R.string.mall_address_2), getString(R.string.mall_working_hours_2), R.drawable.location_mall_2));
+        locations.add(new Location(getString(R.string.mall_name_3), getString(R.string.mall_address_3), getString(R.string.mall_working_hours_3), R.drawable.location_mall_3));
+        locations.add(new Location(getString(R.string.mall_name_4), getString(R.string.mall_address_4), getString(R.string.mall_working_hours_4), R.drawable.location_mall_4));
+        locations.add(new Location(getString(R.string.mall_name_5), getString(R.string.mall_address_5), getString(R.string.mall_working_hours_5), R.drawable.location_mall_5));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
@@ -47,7 +46,7 @@ public class MallsFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Location location = locations.get(position);
 
-                Uri mapUri = Uri.parse("geo:0,0?q=" + location.getAddress());
+                Uri mapUri = Uri.parse(getString(R.string.address_params) + location.getAddress());
                 Intent intent = new Intent(Intent.ACTION_VIEW, mapUri);
                 startActivity(intent);
 

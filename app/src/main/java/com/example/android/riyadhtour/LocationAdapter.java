@@ -1,10 +1,7 @@
 package com.example.android.riyadhtour;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Aloraifi on 20/04/2018.
@@ -44,7 +40,7 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         TextView workingHours = listItemView.findViewById(R.id.list_item_working_hours);
         workingHours.setText(mContext.getString(R.string.working_hours, currentLocation.getWorkingHours()));
         if (currentLocation.getWorkingHours().equals("Always Open")) {
-            workingHours.setTextColor(Color.parseColor("#66BB6A"));
+            workingHours.setTextColor(Color.parseColor(mContext.getString(R.string.open_indication_color)));
         }
 
         ImageView image = listItemView.findViewById(R.id.list_item_image);

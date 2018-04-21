@@ -1,12 +1,74 @@
 <resources>
     <string name="app_name">Riyadh Tour</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="working_hours">Working Hours: %s</string>
     <string name="category_museums">Museums</string>
     <string name="category_mosques">Mosques</string>
     <string name="category_malls">Malls</string>
     <string name="category_parks">Parks</string>
+    <string name="museum_name_1">King Abdulaziz Historical Center</string>
+    <string name="museum_name_2">Royal Saudi Air Force Museum</string>
+    <string name="museum_name_3">Al Masmak Museum</string>
+    <string name="museum_name_4">Murabba Palace</string>
+    <string name="museum_name_5">King Salman Science Oasis</string>
+    <string name="museum_address_1">King Faisal Rd، Al Murabba, Riyadh 12631</string>
+    <string name="museum_address_2">Eastern Ring Branch Rd, King Abdullah, Riyadh 12451</string>
+    <string name="museum_address_3">3153 Al Thumairi St, Ad Dirah, 6937، Riyadh 12634</string>
+    <string name="museum_address_4">2722 الملك سعود, Al Murabba, Riyadh 12631</string>
+    <string name="museum_address_5">Al Safarat, Riyadh 11693</string>
+    <string name="museum_working_hours_1">8AM-9PM</string>
+    <string name="museum_working_hours_2">8AM-8PM</string>
+    <string name="museum_working_hours_3">8AM-9PM</string>
+    <string name="museum_working_hours_4">8AM-9PM</string>
+    <string name="museum_working_hours_5">8AM-8PM</string>
+    <string name="mosque_name_1">King Khalid Grand Mosque</string>
+    <string name="mosque_name_2">Al Rajhi Mosque</string>
+    <string name="mosque_name_3">Fahad Al Owaidah Grand Mosque</string>
+    <string name="mosque_name_4">Princess Latifa Bint Sultan Bin Abdulaziz Grand Mosque</string>
+    <string name="mosque_name_5">Al Jowharah Grand Mosque</string>
+    <string name="mosque_address_1">Umm Al Hamam St, Umm Al Hamam Al Gharbi، Umm Al Hamam Al Gharbi, Riyadh 12326</string>
+    <string name="mosque_address_2">7084 Al Akheyar, Al Jazirah Riyadh 14251 2229</string>
+    <string name="mosque_address_3">King Abdullah Branch Rd, Al Wahah, Riyadh 12445</string>
+    <string name="mosque_address_4">Takhassusi St, Ar Rahmaniyah, takhsussi 12343, Riyadh 12343</string>
+    <string name="mosque_address_5">7110 Uthman Ibn Affan Branch Rd, At Taawun, Riyadh 12476</string>
+    <string name="mosque_working_hours_1">Always Open</string>
+    <string name="mosque_working_hours_2">Always Open</string>
+    <string name="mosque_working_hours_3">Always Open</string>
+    <string name="mosque_working_hours_4">Always Open</string>
+    <string name="mosque_working_hours_5">Always Open</string>
+    <string name="mall_name_1">Al Nakheel Mall</string>
+    <string name="mall_name_2">Centria Mall</string>
+    <string name="mall_name_3">Riyadh Gallery</string>
+    <string name="mall_name_4">Hayat Mall</string>
+    <string name="mall_name_5">Granada Center</string>
+    <string name="mall_address_1">2976 Exit 9, Al Imam Saud Ibn Abdul Aziz Branch Road, Mugharazat District، Al Mughrizat, Riyadh 12483</string>
+    <string name="mall_address_2">Olaya St, Al Olaya, Riyadh 12241</string>
+    <string name="mall_address_3">262 King Fahd Rd, King Fahd, Riyadh 12262</string>
+    <string name="mall_address_4">King Abdul Aziz Rd, King Fahd, Riyadh 12272</string>
+    <string name="mall_address_5">Eastern Ring Branch Rd, Exit 9, Ash Shuhada District، Ash Shuhada, Riyadh 13241</string>
+    <string name="mall_working_hours_1">9:30AM-11PM</string>
+    <string name="mall_working_hours_2">10AM-10:30PM</string>
+    <string name="mall_working_hours_3">8AM-12AM</string>
+    <string name="mall_working_hours_4">8AM-1AM</string>
+    <string name="mall_working_hours_5">9AM-11PM</string>
+    <string name="park_name_1">ALNakeel Park</string>
+    <string name="park_name_2">WORLD SIGHTS PARK Riyadh</string>
+    <string name="park_name_3">King Abdullah Walkways and Park</string>
+    <string name="park_name_4">King Fahad Garden</string>
+    <string name="park_name_5">Prince Abdulaziz Bin Mohammed Bin Ayyaf Park</string>
+    <string name="park_address_1">7516 Juwairiyah Bint Al Harith, An Nakhil, Riyadh 12381 4610</string>
+    <string name="park_address_2">4298 Nasir Ar Rajihi, Al Mughrizat, Riyadh 12482 7164</string>
+    <string name="park_address_3">Salah Ad Din, Unnamed Road، Riyadh 12435</string>
+    <string name="park_address_4">Al Olaya, Riyadh 12211</string>
+    <string name="park_address_5">Al Hamra, Riyadh 13216</string>
+    <string name="park_working_hours_1">Always Open</string>
+    <string name="park_working_hours_2">3:30PM-11PM</string>
+    <string name="park_working_hours_3">Always Open</string>
+    <string name="park_working_hours_4">8AM-7PM</string>
+    <string name="park_working_hours_5">Always Open</string>
+    <string name="address_params">geo:0,0?q=</string>
+    <string name="open_indication_color">#66BB6A</string>
+    <string name="location_image_description">Location Image</string>
+    <string name="available_location">Available Location</string>
 
 </resources>
